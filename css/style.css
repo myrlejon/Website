@@ -1,22 +1,42 @@
 header {
-    background-color: rgba(255, 80, 0, 0.75);
+    padding-top: 1%;
+    color: white;
+    background-color: rgba(85, 85, 158, 0.5);
     text-align: center;
+}
+
+.head_options {
+    color: purple;
+    display: flex;
+    justify-content: space-around;
     
 }
 
-footer {
-    background-color: rgba(255, 80, 0, 0.75);
-    display: flex;
-    justify-content: space-around;
+.blank_space {
+    padding: 5%;
+}
+
+.hero {
+    color: white;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: rgba(85, 85, 158, 0.5);
+}
+
+.hero_options {
+    background-color: rgba(85, 85, 158, 0.5);
+    color: white;
+    text-align: center;
 }
 
 
 body { 
-    background-color: pink;
-}
-
-h3 {
-    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(85, 86, 158, 0.945);
+    background: url(../img/code.jfif)
 }
 
 .card {
@@ -25,3 +45,8 @@ h3 {
 }
 
 
+footer {
+    background-color: rgba(19, 16, 15, 0.75);
+    display: flex;
+    justify-content: space-around;
+}
