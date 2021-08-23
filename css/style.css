@@ -5,19 +5,37 @@
 
 header {
     padding-top: 1%;
-    color: white;
-    background-color: rgba(85, 85, 158, 0.5);
+    background-color: rgb(50, 11, 73);
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
     text-align: center;
+    color: white;
 }
 
 .head_options {
-    color: purple;
     display: flex;
-    justify-content: space-around; 
+    justify-content: space-around;
+    padding-bottom: 0.4em;  
+    border-radius: 3em;
 }
 
-.blank_space {
-    padding: 5%;
+a {
+    border-radius: 3em;
+    width: 5em;
+    padding: 0.2em;
+    text-align: center;
+    background-color: rgba(85, 85, 158, 0.5);
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.space_1 {
+    padding: 3%;
 }
 
 .hero {
@@ -39,15 +57,12 @@ header {
 
 body { 
     font-family: Arial, Helvetica, sans-serif;
+    min-height: 100%;
+    width: 100%;
     margin: 0;
     padding: 0;
     background-color: rgba(85, 85, 158, 0.5);
     background: url(../img/code.jfif)
-}
-
-.card {
-    display: flex;
-    justify-content: center;
 }
 
 img {
@@ -64,10 +79,111 @@ img {
     font-weight: bold;
     width: 5em;
     font-size: 2rem;
+    padding-block: 0.5%;
+}
+
+.space_2 {
+    padding: 0.8%;
+    background-color: rgba(85, 85, 158, 0.5);
+}
+
+.portfolio {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(85, 85, 158);
+    color: white;
+    font-weight: bold;
+    padding: 5%;
+}
+
+.weather_menu {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 3%;
+    background-color: rgba(85, 85, 158, 0.5);
+}
+
+.weather_card {
+    background-color: rgba(50, 11, 73, 0.8);
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 400px;
+    margin: 1em;
 }
 
 
+.weather_flex {
+    display: flex;
+    align-items: center;
+}
+
+.temp {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.weather_description {
+    text-transform: capitalize;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    margin: 0.5em;
+    border-radius: 20%;
+    height: 2.5em;
+    width: 2.5em;
+    outline: none;
+}
+
+.search_bar {
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 120%;
+    border: none;
+    outline: none;
+    padding: 0.5em;
+    border-radius: 5px;
+}
+
 footer {
+    padding-top: 1.3%;
+    padding-bottom: 1.3%;
+    background-color: rgba(85, 85, 158, 0.5);
     display: flex;
     justify-content: space-around;
+}
+
+
+/* Kod för Mobil */
+
+@media screen and (max-width: 1000px) {
+
+    .title {
+        font-size: 0.8rem;
+    }
+
+    .button {
+        width: 4em;
+        font-size: 1rem;
+    }
+
+    .hero {
+        font-size: 0.5rem;
+    }
+
+    .portfolio {
+        font-size: 0.5rem;
+    }
+
+
 }

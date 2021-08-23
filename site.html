@@ -2,7 +2,7 @@
 <html lang="en">
    <head>
       <link rel="stylesheet" href="css/style.css">
-      <script src="script/script.js"></script>
+      <script src="script/script.js" defer></script>
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible"
       content ="IE-edge" />
@@ -16,21 +16,69 @@
    <header>
       <nav>
          <div class="title">
-            <h2>Webdeveloper</h2>
-            <img src="img/computer.png" alt="" width="100" height = "100">
+            <h2>Webdeveloper</h2> 
+            <img src="img/computer.png" alt="computer" width="50" height="50">
+         </div>
+         <div class="computer_icon">
          </div>
          <div class="head_options">
-            <a href="site.html">Home</a> <a href="about.html">About</a> <a href="contact.html">Contact</a>
+            <a href="#site">Home</a> <a href="#about">About</a> <a href="#contact">Contact</a>
          </div>
       </nav>
    </header>
-   <div class="blank_space"></div>
+   <div class="space_1"></div>
 <body>
    <div class="hero">
       <h1>Quality code made only for you</h1>
       <h3>Webdeveloper offers 10+ years of experience</h3>
    </div>
    <div class="hero_options">
-      <a class="button" href="about.html">About</a><a class="button" href="contact.html">Contact</a>
+      <a class="button" href="#about">About</a><a class="button" href="#contact">Contact</a>
    </div>
+   <div class="space_2">
+   </div>
+   <section class="portfolio">
+      <div class="card_1">
+         <img src ="img/sql.png" alt="sql" width="100" height="100">
+         <h2>Experience with several SQL projects</h2>
+      </div>
+      <div class="card_2">
+         <img src="img/c.png" alt="c#" width="100" height="100">
+         <h2>Over 100 different C# projects</h2>
+      </div>
+      <div class="card_3">
+         <a href="https://play.unity.com/mg/other/squirrel-mania-web">
+            <img src="img/game.png" alt="unity" width="100" height="100">
+         </a>
+         <h2>Unity games made from scratch</h2>
+         <h3>(Click image to play!)</h3>
+      </div>
+   </section>
+   <div class="weather_menu">
+      <div class="weather_card">
+         <div class="search">
+            <input type="text" class="search_bar">
+            <button><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg">
+               <path 
+                  d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z">
+               </path>
+            </svg></button>
+         </div>
+         <div class="weather">
+            <h2 class="city">Weather in Gothenburg</h2>
+            <h1 class="temp">23°C</h1>
+            <div class="weather_flex">
+               <img src="https://openweathermap.org/img/wn/03n.png" alt="" class="weather_icon">
+               <div class="weather_description">Cloudy</div>
+            </div>
+            <div class="humidity">Humidity: 60%</div>
+            <div class="wind">Wind speed: 5 km/h</div>
+         </div>
+      </div>
+   </div>
+   <footer>
+      <img src="img/github.png" alt="github" width="50" height="50">
+      <img src="img/linkedin.png" alt="linkedin" width="50" height="50">
+      <img src="img/facebook.png" width="50" height="50">
+   </footer>
 </body>
