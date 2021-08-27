@@ -1,12 +1,3 @@
-/*
-let num = 0
-
-function myFunction() {
-    num++
-    console.log(num)
-} 
-*/
-
 let weather = {
     "apiKey": "41a364069ea7f53306ebd520f4b4f27b",
     fetchWeather: function (city) {
@@ -25,7 +16,7 @@ let weather = {
         const { temp, humidity } = data.main;
         const { speed } = data.wind;
         document.querySelector(".city").innerText = "Weather in " + name;
-        document.querySelector(".weather_icon").src =
+        document.querySelector(".weather_icon").src = 
         "https://openweathermap.org/img/wn/" + icon + ".png";
         document.querySelector(".weather_description").innerText = description;
         document.querySelector(".temp").innerText = temp + "°C";

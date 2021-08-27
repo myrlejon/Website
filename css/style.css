@@ -16,6 +16,11 @@ header {
     color: white;
 }
 
+.computer_img {
+    margin-right: 0.5em;
+    margin-top: 0.3em;
+}
+
 .head_options {
     display: flex;
     justify-content: space-around;
@@ -163,13 +168,30 @@ footer {
     justify-content: space-around;
 }
 
+.footer_img {
+    width: 60px;
+    height: 60px;
+}
 
-/* Kod för Mobil */
+
+/* Formatering för Mobil */
 
 @media screen and (max-width: 1000px) {
 
     .title {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
+    }
+
+    .computer_img {
+        width: 30px;
+        height: 30px;
+    }
+
+    a {
+        border-radius: 3em;
+        width: 4em;
+        padding: 0.2em;
+        font-size: 0.6em;
     }
 
     .button {
@@ -185,5 +207,65 @@ footer {
         font-size: 0.5rem;
     }
 
+    img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .h2_card {
+        font-size: 0.6rem;
+    }
+
+    .h3_card {
+        font-size: 0.8em;
+    }
+
+    .weather_card {
+        padding: 1em;
+        border-radius: 30px;
+        width: 100%;
+        max-width: 300px;
+        margin: 1em;
+    }
+
+    .search_bar {
+        width: 30%;
+        padding: 0.2em;
+    }
+
+    .city {
+        display: flex;
+        justify-content: center;
+        font-size: 100%;
+    }
+
+    .temp {
+        display: flex;
+        justify-content: center;
+        font-size: 1.5em;
+    }
+
+    .weather_flex {
+        display: flex;
+        justify-content: center;
+        padding-right: 50px;
+    }
+
+    .humidity {
+        display: flex;
+        justify-content: center;
+        font-size: 0.8em;
+    }
+
+    .wind {
+        display: flex;
+        justify-content: center;
+        font-size: 0.8em;
+    }
+
+    .footer_img {
+        width: 40px;
+        height: 40px;
+    }
 
 }
